@@ -1,0 +1,20 @@
+#N canvas 0 22 450 300 10;
+#X obj 95 74 osc~ 440;
+#X obj 151 175 dac~;
+#X obj 183 122 line~;
+#X obj 182 148 *~;
+#X obj 192 91 r volume;
+#X obj 236 118 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 296 129 s volume;
+#X msg 291 53 0.1;
+#X msg 323 88 0;
+#X obj 73 34 r freq;
+#X connect 0 0 3 0;
+#X connect 2 0 3 1;
+#X connect 3 0 1 1;
+#X connect 4 0 2 0;
+#X connect 4 0 5 0;
+#X connect 7 0 6 0;
+#X connect 8 0 6 0;
+#X connect 9 0 0 0;
