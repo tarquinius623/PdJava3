@@ -13,9 +13,10 @@ public class OfficialTester2 {
 		JavaSoundThread audioThread = new JavaSoundThread(44100, 2, 16);
 		int patch = PdBase.openPatch("src/test2.pd");
 		audioThread.start();
-		int success;
-		success = PdBase.sendBang("file");
-		System.out.println(success);
+		int success = 0;
+		boolean b = audioThread.isAlive();
+		//success = PdBase.sendBang("file");
+		System.out.println(b);
 		Thread.sleep(100000);
 		audioThread.interrupt();
 		audioThread.join();
