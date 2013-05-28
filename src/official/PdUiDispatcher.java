@@ -10,8 +10,8 @@ public class PdUiDispatcher extends PdDispatcher {
 
 	@Override
 	public void print(String arg0) {
-		// TODO Auto-generated method stub
 		System.out.println(arg0);
 	}
+
 
 }
